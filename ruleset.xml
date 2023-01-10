@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<ruleset name="psr12-stroustrup-and-space">
+  <description>PSR 12 with Stroustrup Brackets and Spaces in Parentheses</description>
+
+  <rule ref="PSR12">
+
+    <!-- Stroustrup style brackets: Opening bracket on the same line -->
+    <exclude name="PSR2.Classes.ClassDeclaration.OpenBraceNewLine"/>
+    <exclude name="Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine"/>
+    <exclude name="PSR12.Classes.OpeningBraceSpace.Found"/>
+
+    <!-- Stroustrup style brackets: No else-cuddling -->
+    <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
+
+    <!-- Spaces in Parentheses: Require a padding of 1 space in control structures -->
+    <exclude name="PSR12.ControlStructures.ControlStructureSpacing.SpaceBeforeCloseBrace"/>
+    <exclude name="PSR12.ControlStructures.ControlStructureSpacing.SpacingAfterOpenBrace"/>
+
+    <!-- Space around functions -->
+    <exclude name="PSR2.Classes.ClassDeclaration.CloseBraceAfterBody"/>
+    <exclude name="PSR12.Classes.AnonClassDeclaration.CloseBraceAfterBody"/>
+
+  </rule>
+
+  <!-- Stroustrup style brackets: Opening bracket on the same line -->
+  <rule ref="Drupal.Classes.ClassDeclaration.BraceOnNewLine">
+  </rule>
+  <rule ref="Generic.Functions.OpeningFunctionBraceKernighanRitchie.BraceOnNewLine">
+  </rule>
+  <!-- Stroustrup style brackets: No else-cuddling -->
+  <rule ref="Drupal.ControlStructures.ControlSignature.NewlineAfterCloseBrace">
+  </rule>
+
+  <!-- Spaces in Parentheses: Require a padding of 1 space in control structures -->
+  <rule ref="PSR2.ControlStructures.ControlStructureSpacing">
+    <properties>
+      <property name="requiredSpacesAfterOpen" value="1" />
+      <property name="requiredSpacesBeforeClose" value="1" />
+    </properties>
+  </rule>
+  <!-- Spaces in Parentheses: Require space after negation ! in control structures -->
+  <rule ref="Generic.Formatting.SpaceAfterNot">
+  </rule>
+
+  <!-- Space around functions: Require 1 blank line before and after function blocks -->
+  <rule ref="Squiz.WhiteSpace.FunctionSpacing">
+    <properties>
+      <property name="spacing" value="1"/>
+    </properties>
+  </rule>
+
+
+</ruleset>

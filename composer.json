@@ -1,0 +1,24 @@
+{
+    "name": "nicolajknudsen/psr12-stroustrup-and-space",
+    "description": "Custom coding style",
+    "type": "phpcodesniffer-standard",
+    "authors": [
+        {
+            "name": "Nicolaj Knudsen"
+        }
+    ],
+    "require": {
+        "squizlabs/php_codesniffer": "*",
+        "drupal/coder": "*"
+    },
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "sort-packages": true
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+    }
+}
