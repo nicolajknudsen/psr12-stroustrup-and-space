@@ -64,7 +64,7 @@ That's it. Check that the coding standard is available by running `phpcs -i`.
 
 ## VS Code
 
-To make use of the linting and fixing ability af PHPCS and PHPCBF in VS Code, complete the following steps:
+To make use of the linting and fixing ability of PHPCS and PHPCBF in VS Code, complete the following steps:
 
 1. Install the [PHPSAB extension in VS Code](https://github.com/valeryan/vscode-phpsab).
 2. Point the config to `/path/to/composer/vendor/bin`. Follow the guide in the extension documentation, or just open `settings.json` in VS Code with `ctrl+shift+P` and add the following config:
